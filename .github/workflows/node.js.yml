@@ -34,6 +34,8 @@ jobs:
     - run: npm i
     - run: npm run build --if-present
     - run: npm test
+    - run: rm -rf /var/lib/build
+    - run: cp -r /root/actions-runner/_work/Basic-React-Project/Basic-React-Project/build /var/lib/
 
     
   
